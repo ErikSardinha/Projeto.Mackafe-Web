@@ -1,0 +1,185 @@
+/*<============== DEVOLOPERS INFORMATIONS ==============>
+Authors: Bernard Wahba. 
+         Erik S. Sardinha.
+Authors EMAIL: benny.bw@hotmail.com
+               erik.sardinha@hotmail.com
+Description: This site is part of a college project.
+Date: September/2016
+Last Update: November/2016
+*/
+/* <============== @FRAMES ==============> */
+@keyframes esquerda{
+  from {margin-left:-50%;}
+    to {margin-left:0;}
+}
+/* <============== CONFIGURAÇÃO GERAIS ==============> */
+body{
+    width:100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    background-image: url(Imagens/Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center; 
+}
+nav{
+    margin:0;
+    padding:0;
+    width:20%;
+    height:100%;
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    font-size: 2.0em;
+    color:#471706;
+    text-align: center;
+    animation-name: esquerda;
+    animation-duration: 2s;
+}
+nav figure{
+    text-align: center;
+}
+nav figure img{
+    width:200px;
+    margin:0;
+}
+.IconeMenu{
+    display:none;
+}
+nav ul.Menu{
+    margin:0;
+    text-align:left;
+    font-family: fantasy;
+}
+nav ul.Menu li{
+    width:width:100%;
+    padding:5px;
+    list-style:none;
+    border-right: 5px dotted #471706;
+    border-radius:40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+}
+a{
+    color:#471706;
+    text-shadow: #000 5px -5px; 
+    text-shadow: #000 -5px 5px; 
+    text-shadow: #000 5px 5px; 
+    text-shadow: #000 -5px 5px;
+    text-decoration: none;
+}
+nav ul.Redes{
+    text-align: center;
+    margin:0;
+}
+nav ul.Redes li{
+    text-align:center;
+    font-size: 1.0em;
+    margin:5px;
+    width:40px;
+    padding: 10px;
+    list-style: none;
+    float:left;
+    background:#471706;
+    color:#000;
+    border: 3px solid #000;
+    border-radius:100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+section{
+    width:80%;
+    margin: 0;
+    margin-left:20%;
+    color:#471706;
+}
+/* <============== :Ações ==============> */
+nav ul.Menu li:hover{
+    background-color: white;
+    font-size: 1.2em;
+}
+
+/* <============== @MEDIA SCREENS ==============> */
+/*
+1200PX – DESKTOPS, NOTEBOOKS COM MONITORES WIDESCREEN
+***********************************************************/
+@MEDIA SCREEN AND (MAX-WIDTH:1200PX){
+    body{
+        background-size: auto;
+    }
+    nav{
+        margin:0;
+        padding:0;
+        width:250px;
+    }
+}
+/*
+960PX – TABLETS NO FORMATO PAISAGEM E ALGUNS MONITORES MAIS ANTIGOS
+***********************************************************/
+@MEDIA SCREEN AND (MAX-WIDTH:960PX){
+    nav{
+        margin:0;
+        padding:0;
+        width:250px;
+    }
+}
+/*
+768PX – TABLETS NO FORMATO RETRATO, COMO O IPAD
+***********************************************************/
+@MEDIA SCREEN AND (MAX-WIDTH:768PX){
+    body{
+        background-size: auto;
+    }
+    nav{
+        margin: 0;
+        width:100%;
+        text-align: center;
+        position:relative;
+    }
+    .IconeMenu{
+        display:block;
+    }
+    nav ul{
+        display: none;
+    }
+}
+/*
+480PX – SMARTPHONES NO FORMATO PAISAGEM COM TELA PEQUENA
+***********************************************************/
+@MEDIA SCREEN AND (MAX-WIDTH:480PX){
+    body{
+        background-size: auto;
+    }
+    .IconeMenu{
+        display:block;
+    }
+    nav{
+        margin: 0;
+        position:relative;
+    }
+    nav ul{
+        margin: 0;
+        display: none;
+    }
+}
+/*
+320PX – SMARTPHONES NO FORMATO RETRATO COM TELA PEQUENA
+***********************************************************/
+@MEDIA SCREEN AND (MAX-WIDTH:320PX){
+    body{
+        background-size: auto;
+    }
+    .IconeMenu{
+        display:block;
+    }
+    nav{
+        margin: 0;
+        position:relative;
+    }
+    nav ul{
+        display: none;
+    }
+}
