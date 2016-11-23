@@ -115,6 +115,12 @@ nav ul.Redes li:hover{
     background-color: #000;
     color:#471706;
 }
+footer{
+    width: 80%;
+    margin-left: 20%;
+    display: block;
+    padding-top: 10px;
+}
 
 
 /* <============== @MEDIA SCREENS ==============> */
