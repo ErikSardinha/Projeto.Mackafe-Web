@@ -93,6 +93,16 @@ section{
     margin-left:20%;
     color:#471706;
 }
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .aa, .ab, .ac, .ad, .ae, .af, .ag, .ah, .ai, .bj, .ba, .bb, .bc, .bd{
+display: none;	
+}
+.Slide{
+width:450px;
+height:auto;
+}
+section article img.Slide{
+    width:100px;
+}
 /* <============== :Ações ==============> */
 nav ul.Menu li:hover{
     font-size: 1.2em;
