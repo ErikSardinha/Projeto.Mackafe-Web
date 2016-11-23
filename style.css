@@ -25,13 +25,16 @@ body{
     background-size: 100% auto;
     background-position: center; 
 }
+h1{
+    font-size: 2em;
+}
 nav{
     margin:0;
     padding:0;
     width:20%;
     height:100%;
     position:fixed;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.7);
     font-size: 2.0em;
     color:#471706;
     text-align: center;
@@ -42,7 +45,7 @@ nav figure{
     text-align: center;
 }
 nav figure img{
-    width:200px;
+    width:150px;
     margin:0;
 }
 .IconeMenu{
@@ -88,14 +91,37 @@ nav ul.Redes li{
 }
 
 section{
-    width:80%;
+    width:79%;
     margin: 0;
     margin-left:20%;
     color:#471706;
+    padding-bottom: 5%;
+    background: rgba(0, 0, 0, 0.3);
 }
 section article.Cardapio{
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 5px #000;
     text-align: center;
+}
+section article.Cardapio h1{
+    font-size: 2em;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+input[type="submit"]{
+    width:100px;
+    height: 30px;
+    font-size: 1.2em;
+    background-color:#471706;
+    color:#FFF;
 }
 .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .aa, .ab, .ac, .ad, .ae, .af, .ag, .ah, .ai, .bj, .ba, .bb, .bc, .bd{
 display: none;	
@@ -116,8 +142,9 @@ nav ul.Redes li:hover{
     color:#471706;
 }
 footer{
-    width: 80%;
+    width:80%;
     margin-left: 20%;
+    background: rgba(0, 0, 0, 0.3);
     display: block;
     padding-top: 10px;
 }
