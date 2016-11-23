@@ -93,6 +93,10 @@ section{
     margin-left:20%;
     color:#471706;
 }
+section article.Cardapio{
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+}
 .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .aa, .ab, .ac, .ad, .ae, .af, .ag, .ah, .ai, .bj, .ba, .bb, .bc, .bd{
 display: none;	
 }
