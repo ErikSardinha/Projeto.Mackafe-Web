@@ -17,6 +17,7 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin: 0 0 60px; /* altura do seu footer */
     width:100%;
@@ -29,9 +30,11 @@ body {
     background-size: 100% auto;
     background-position: center; 
 }
+
 h1{
     font-size: 2em;
 }
+
 nav{
     margin:0;
     padding:0;
@@ -94,17 +97,32 @@ nav ul.Redes li{
     -moz-border-radius: 100%;
 }
 
+#slide img {
+    z-index: 1;
+    display: none;
+    }
+#slide p{
+z-index:2;
+width: 100%;
+padding: 10px; 
+font-family: Arial; 
+font-size: 14px; 
+background: rgba(0,0,0,0.5);  
+color: #fff;
+}
+
 section{
-    width:79%;
+    width:80%;
     margin: 0;
+    height: 100%;
     margin-left:20%;
     color:#471706;
-    padding-bottom: 5%;
     background: rgba(0, 0, 0, 0.3);
 }
 section article.Cardapio{
     box-shadow: 5px #000;
     text-align: center;
+    padding-bottom: 5%;
 }
 section article.Cardapio h1{
     font-size: 2em;
@@ -117,6 +135,7 @@ section article.Cardapio figure figcaption p{
     font-size: 1.5em;
     text-shadow: -1px -1px #FFF;
 }
+
 textarea {
     width: 100%;
     height: 200px;
@@ -135,49 +154,12 @@ input[type="submit"]{
     background-color:#471706;
     color:#FFF;
 }
-#content {
-	margin: 0 auto;
-	width: 650px;
-	height: 200px;
-}
 
-#carrossel {
-	float: left;
-	width: 630px;
-	overflow: hidden;
-	height: 150px;
-}
-
-#carrossel ul li {
-	width: 200px;
-	height: 150px;
-	float: left;
-	margin: 0 5px;
-}
-
-#menu-carrossel {
-    font-size: 0.5em;
-	float: left;
-	clear: both;
-	width: 100%;
-	text-align: center;
-}
-section article img.Slide{
-    width:100px;
-}
-/* <============== :Ações ==============> */
-nav ul.Menu li:hover{
-    font-size: 1.2em;
-}
-nav ul.Redes li:hover{
-    background-color: #000;
-    color:#471706;
-}
 footer{
     position: absolute; 
     bottom: 0px;
-    width:78%;
-    padding: 1%;
+    width:80%;
+    height:auto;
     padding-bottom: 0;
     margin-left: 20%;
     background: rgba(0, 0, 0, 0.3);
@@ -198,7 +180,14 @@ footer p{
     text-shadow: #000 -1px 1px;
 }
 
-
+/* <============== :Ações ==============> */
+nav ul.Menu li:hover{
+    font-size: 1.2em;
+}
+nav ul.Redes li:hover{
+    background-color: #000;
+    color:#471706;
+}
 /* <============== @MEDIA SCREENS ==============> */
 /*
 1200PX – DESKTOPS, NOTEBOOKS COM MONITORES WIDESCREEN
@@ -231,14 +220,25 @@ footer p{
         background-size: auto;
     }
     nav{
-        display: none;
         margin: 0;
         width:100%;
         text-align: center;
         position:relative;
     }
+    section{
+        margin-left: 0;
+        width:100%;
+    }
+    footer{
+        margin-left: 0;
+        width:100%;
+    }
     .IconeMenu{
         display:block;
+    }
+    nav figure img{
+        width:100px;
+        margin:0;
     }
     nav ul{
         display: none;
@@ -254,6 +254,14 @@ footer p{
     .IconeMenu{
         display:block;
     }
+    section{
+        margin-left: 0;
+        width:100%;
+    }
+    footer{
+        margin-left: 0;
+        width:100%;
+    }
     nav{
         margin: 0;
         position:relative;
@@ -262,7 +270,13 @@ footer p{
         margin: 0;
         display: none;
     }
-    nav.Menu{ display:none}
+    nav.Menu{ 
+        display:none
+    }
+    nav figure img{
+        width:50px;
+        margin:0;
+    }
 
 }
 /*
@@ -272,6 +286,14 @@ footer p{
     body{
         background-size: auto;
     }
+    section{
+        margin-left: 0;
+        width:100%;
+    }
+    footer{
+        margin-left: 0;
+        width:100%;
+    }
     .IconeMenu{
         display:block;
     }
@@ -279,31 +301,13 @@ footer p{
         margin: 0;
         position:relative;
     }
+    nav figure img{
+        width:50px;
+        margin:0;
+    }
     nav ul{
         display: none;
     }
     nav.Menu{ display:none}
 
 }
-.Carrossel{
-    width:800px;
-    height:400px;
-    padding:20px;
-    border:1px solid gray;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    background: black; 
-}
-.image-slider-wrapper{
-    overflow: hidden;
-}
-#image_slider{
-    position: relative;
-    height: 280px;
-    padding:0;
-}
-#image_slider li{
-    max-width: 100%;
-    float:left;
-    list-style: none;

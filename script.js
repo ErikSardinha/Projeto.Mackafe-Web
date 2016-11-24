@@ -18,11 +18,11 @@ function Slide() {
 }
 
 function AbrirMenu(){
-document.getElementsByTagName("nav")[0].style.display = "block";
+document.getElementsByClassName("Menu")[0].style.display = "block";
 document.getElementById("x").style.display = "block";	
 }
 function FecharMenu(){
-document.getElementsByTagName("nav")[0].style.display = "none";
+document.getElementsByClassName("Menu")[0].style.display = "none";
 document.getElementById("FechaMenu")[0].style.display = "none";
 }
 var ul;
