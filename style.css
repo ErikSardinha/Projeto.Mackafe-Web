@@ -13,11 +13,15 @@ Last Update: November/2016
     to {margin-left:0;}
 }
 /* <============== CONFIGURAÇÃO GERAIS ==============> */
-body{
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 60px; /* altura do seu footer */
     width:100%;
     height:100%;
     padding: 0;
-    margin: 0;
     background-color: #DDD;
     background-image: url(Imagens/Background.jpg);
     background-repeat: no-repeat;
@@ -76,9 +80,9 @@ nav ul.Redes{
 }
 nav ul.Redes li{
     text-align:center;
-    font-size: 1.0em;
+    font-size: 0.67em;
     margin:5px;
-    width:40px;
+    width:20px;
     padding: 10px;
     list-style: none;
     float:left;
@@ -105,6 +109,14 @@ section article.Cardapio{
 section article.Cardapio h1{
     font-size: 2em;
 }
+section article.Cardapio figure figcaption h2{
+    font-size: 1.59em;
+    text-shadow: -1px -1px #000;
+}
+section article.Cardapio figure figcaption p{
+    font-size: 1.5em;
+    text-shadow: -1px -1px #FFF;
+}
 textarea {
     width: 100%;
     height: 200px;
@@ -123,12 +135,32 @@ input[type="submit"]{
     background-color:#471706;
     color:#FFF;
 }
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .aa, .ab, .ac, .ad, .ae, .af, .ag, .ah, .ai, .bj, .ba, .bb, .bc, .bd{
-display: none;	
+#content {
+	margin: 0 auto;
+	width: 650px;
+	height: 200px;
 }
-.Slide{
-width:450px;
-height:auto;
+
+#carrossel {
+	float: left;
+	width: 630px;
+	overflow: hidden;
+	height: 150px;
+}
+
+#carrossel ul li {
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin: 0 5px;
+}
+
+#menu-carrossel {
+    font-size: 0.5em;
+	float: left;
+	clear: both;
+	width: 100%;
+	text-align: center;
 }
 section article img.Slide{
     width:100px;
@@ -142,13 +174,28 @@ nav ul.Redes li:hover{
     color:#471706;
 }
 footer{
-    position:absolute;
-	bottom:0;
-    width:80%;
+    position: absolute; 
+    bottom: 0px;
+    width:78%;
+    padding: 1%;
+    padding-bottom: 0;
     margin-left: 20%;
     background: rgba(0, 0, 0, 0.3);
     display: block;
     padding-top: 10px;
+}
+footer iframe{
+    width:100%;
+    height:20px;
+    float:left;
+    color:#471706;
+    text-shadow: #000 2px -2px;
+}
+footer p{
+    float:right;
+    font-size: 1.1em;
+    color:#471706;
+    text-shadow: #000 -1px 1px;
 }
 
 
@@ -163,7 +210,7 @@ footer{
     nav{
         margin:0;
         padding:0;
-        width:250px;
+        width:20%;
     }
 }
 /*
@@ -173,7 +220,7 @@ footer{
     nav{
         margin:0;
         padding:0;
-        width:250px;
+        width:20%;
     }
 }
 /*
@@ -184,6 +231,7 @@ footer{
         background-size: auto;
     }
     nav{
+        display: none;
         margin: 0;
         width:100%;
         text-align: center;

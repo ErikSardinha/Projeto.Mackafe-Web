@@ -17,11 +17,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
-    <script type="text/javascript">
+         <script type="text/javascript" src="js/jcarousellite.js"></script>
+         <script type="text/javascript">
+            $(function() {
+                 $("#carrossel"). jCarouselLite({
+                     btnPrev: '.prev', 
+                     btnNext: '.next',
+                     visible: 3
+                        })
+                })
     </script>
-        
     </head>
-    <body onload="Slide()">
+    <body>
         <nav>
             <figure>
                 <img src="Imagens/logoprojeto.png">
@@ -39,27 +46,31 @@
                 <li><i class="fa fa-twitter"></i></li>
             </ul>
         </nav>
-        <section>
-            <article>
-                <div id="Cafés do Campus Mackenzie ">
-					 <div class=”image-slider-wrapper”>
-        <ul id=”image_slider”>
-            <li><img src=”./imagens/fototrabalho/1.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/2.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/3.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/4.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/5.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/6.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/7.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/8.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/9.jpg”></li>
-            <li><img src=”./imagens/fototrabalho/10.jpg”></li>
-            
-        </ul> 
-    </div>
-				</div>
-            </article>
-        </section>
+		<div id="content">
+	        <div id="carrossel">
+		        <ul>
+			        <li>
+				        <img src="Imagens/fototrabalho/1.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+			        </li>
+			        <li>
+				        <img src="Imagens/fototrabalho/2.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+			        </li>
+			        <li>
+				        <img src="Imagens/fototrabalho/3.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+			        </li>
+		        	<li>
+				        <img src="Imagens/fototrabalho/4.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+			        </li>
+			        <li>
+				        <img src="Imagens/fototrabalho/5.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+			        </li>
+		        </ul>
+	        </div>
+            <div id="menu-carrossel">
+                <a href="#" class="prev" title="Anterior">Anterior</a>
+	            <a href="#" class="next" title="Próximo">Próximo</a>
+	        </div>
+	    </div>
         <footer>
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmackafe2F%2F&width=450&layout=standard&action=like&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </footer>
